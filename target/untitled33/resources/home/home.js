@@ -1,0 +1,1 @@
+app.WrapperView && new app.WrapperView();

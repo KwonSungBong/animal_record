@@ -1,0 +1,177 @@
+body{
+    background-color: #eee;
+}
+#title {
+    position:absolute;
+    top:0;
+    bottom:50px;
+    left:0;
+    right:0;
+    line-height:50px;
+    overflow:hidden;
+}
+h3 {padding-left:10px;margin-top:0;margin-bottom:0;line-height:50px;}
+#wrapper{
+    position:absolute;
+    top:50px;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:white;
+    overflow:hidden;
+    min-width:716px;
+    min-height:716px;
+}
+#header{
+    position:absolute;
+    top:0;
+    bottom:calc(100% - 50px);
+    left:0;
+    right:0;
+    line-height:50px;
+    background-color:white;
+}
+#content{
+    position:absolute;
+    top:50px;
+    bottom:50px;
+    left:0;
+    right:0;
+    background-color:white;
+}
+#footer{
+    position:absolute;
+    top:calc(100% - 50px);
+    bottom:0;
+    left:0;
+    right:0;
+    line-height:50px;
+    background-color:white;
+}
+.l-row-half-3-bottom-of-top{
+    position:absolute;
+    top:0;
+    bottom:300px;
+    left:0;
+    right:0;
+    background-color:white;
+}
+.l-row-half-3-bottom{
+    position:absolute;
+    top:calc(100% - 300px);
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:white;
+}
+.l-col-half-4-left{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:calc(100% - 400px);
+    background-color:white;
+}
+.l-col-half-4-left-of-right{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:400px;
+    right:0;
+    background-color:white;
+}
+.l-right-group{
+    float:right;
+}
+.head{
+    position:relative;
+    height:40px;
+    width:100%;
+    line-height:40px;
+    padding:0 20px;
+    border-bottom:solid 1px #dce0eb;
+}
+.body{
+    position:absolute;
+    top:40px;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow:hidden;
+    overflow-x:auto;
+}
+.body .table{
+    table-layout:fixed;
+    margin-bottom:0;
+}
+.body .table-head{
+    padding:0 10px;
+    height:45px;
+    width:100%;
+    border-bottom:solid 2px #FFF;
+}
+.body .table-body{
+    position:absolute;
+    top:45px;
+    bottom:0;
+    padding:10px;
+    padding-top:0;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.body .table-body.use-foot>div{
+    position:relative;
+}
+.body .table-body.use-foot{
+    bottom:40px;
+    padding-bottom:0;
+}
+.body .table-foot{
+    position:absolute;
+    height:40px;
+    bottom:0;
+    width:100%;
+}
+
+.table-body-scroll{
+    z-index:10;
+}
+.body + .table-body-scroll{
+     position:absolute;
+     top:85px;
+     right:0px;
+     left:calc(100% - 20px);
+     background-color:transparent;
+     overflow-y:scroll;
+ }
+.body.useless-head + .table-body-scroll{
+    top:45px;
+}
+.body + .table-body-scroll>.table-body-size{
+    background-color:#FFF;
+}
+.table-body-dummy{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#FFF;
+}
+tr.select, tr.select td{
+    background-color:black;
+    color:white;
+}
+#search_name{
+    background-color:black;
+    color:white;
+}
+.destroy{
+    background-color:red;
+}
+.create{
+    background-color:blue;
+}
+.update{
+    background-color:green;
+}
